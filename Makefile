@@ -6,7 +6,7 @@
 #    By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/25 18:55:54 by wweerasi          #+#    #+#              #
-#    Updated: 2024/05/03 22:38:16 by wweerasi         ###   ########.fr        #
+#    Updated: 2024/05/07 21:14:32 by wweerasi         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,14 +78,19 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(AR) $(NAME) $(OBJECTS)
 
-bonus: $(BONUS_OBJECTS)
+bonus: .bonus
+
+.bonus:$(NAME) $(BONUS_OBJECTS)
 	$(AR) $(NAME) $(BONUS_OBJECTS)
+	@touch .bonus
 
 clean:
 	$(RM) $(OBJECTS) $(BONUS_OBJECTS)
+	@$(RM) .bonus
 
 fclean: clean
 	$(RM) $(NAME)
+	@$(RM) .bonus
 
 re: fclean all
 

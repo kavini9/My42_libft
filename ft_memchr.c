@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 23:09:14 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/06 23:16:52 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/07 20:28:16 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,16 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return ((void *)s);
 		s++;
 	}
-	return (0);
+	return (NULL);
 }
+/******************************************************************************/
+/*                                                                            */
+/*DESCRIPTION                                                                 */
+/*    Memchr locates the first occurrence of c (converted to an unsigned      */
+/*    char) in string s.                                                      */
+/*                                                                            */
+/*RETURN VALUES                                                               */
+/*    Memchr returns a pointer to the byte located, or NULL if no such byte   */
+/*    exists within n bytes.                                                  */
+/*                                                                            */
+/******************************************************************************/

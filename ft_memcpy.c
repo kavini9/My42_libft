@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 18:17:48 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/06 19:14:46 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/07 19:59:58 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,23 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	char	*d;
+	char	*tmp_dst;
 
-	d = (char *) dst;
+	tmp_dst = (char *) dst;
 	if (dst != NULL || src != NULL)
 	{
 		while (n--)
-			*d++ = *(const char *)src++;
+			*tmp_dst++ = *(const char *)src++;
 	}
 	return (dst);
 }
+/******************************************************************************/
+/*                                                                            */
+/*DESCRIPTION                                                                 */
+/*   Memcpy copies n bytes from memory area src to memory area dst.           */
+/*   If dst and src overlap, behavior is undefined.                           */
+/*                                                                            */
+/*RETURN VALUES                                                               */
+/*   Memcpy returns the original value of dst.                                */
+/*                                                                            */
+/******************************************************************************/

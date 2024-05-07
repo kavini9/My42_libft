@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:57:36 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/06 16:49:21 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/07 20:29:09 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,16 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*tmp_s;
-
-	tmp_s = (char *)s;
 	while (n--)
 	{
-		*tmp_s = 0;
-		tmp_s++;
+		*(char *)s = 0;
+		s++;
 	}
 }
+/******************************************************************************/
+/*                                                                            */
+/*DESCRIPTION                                                                 */
+/*	   Bzero writes n zeroed bytes to the string s.  If n is zero, bzero does */
+/*	   nothing.                                                               */
+/*                                                                            */
+/******************************************************************************/

@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 19:13:14 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/06 15:22:57 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/07 21:47:04 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #ifndef LIBFT_H
@@ -15,7 +15,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <limits.h>
-# include <stdint.h>
 
 typedef struct s_list
 {

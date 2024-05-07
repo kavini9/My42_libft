@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 14:16:22 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/06 23:25:02 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/07 21:16:42 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,12 @@ char	*ft_strdup(const char *s1)
 	}
 	return (s2);
 }
+/******************************************************************************/
+/*                                                                            */
+/*DESCRIPTION                                                                 */
+/*   Strdup allocates sufficient memory for a copy of the string s1, does the */
+/*	 copy, and returns a pointer to it.                                       */
+/*                                                                            */
+/*   If insufficient memory is available, NULL is returned.                   */
+/*                                                                            */
+/******************************************************************************/

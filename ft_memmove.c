@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 23:10:27 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/06 23:13:53 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/07 20:02:50 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,12 +38,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 /******************************************************************************/
 /*                                                                            */
 /*DESCRIPTION                                                                 */
-/*     The memmove() function copies len bytes from string src to string dst. */
-/*     The two strings may overlap; the copy is always done in a non-destruc- */
-/*     tive manner.                                                           */
+/*     Memmove copies len bytes from string src to string dst.                */
+/*     The two strings may overlap; the copy is always done in a              */
+/*     non-destructive manner.                                                */
 /*                                                                            */
 /*RETURN VALUES                                                               */
-/*     The memmove() function returns the original value of dst.              */
+/*     Memmove returns the original value of dst.                             */
 /*                                                                            */
 /*FUNCTION EXECUTION                                                          */
 /*     Overlap Handling: If the memory address of the source is before that of*/

@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 23:27:29 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/06 23:24:18 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/07 21:16:27 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,15 @@ void	*ft_calloc(size_t count, size_t size)
 		ft_bzero(ptr, count * size);
 	return (ptr);
 }
+/******************************************************************************/
+/*                                                                            */
+/*DESCRIPTION                                                                 */
+/*    Calloc contiguously allocates enough space for count objects that are   */
+/*    size bytes of memory each and returns a pointer to the allocated memory.*/
+/*    The allocated memory is filled with bytes of value zero.                */
+/*                                                                            */
+/*RETURN VALUES                                                               */
+/*    Calloc return a pointer to allocated memory.  If there is an error,     */
+/*    it returns a NULL pointer.                                              */
+/*                                                                            */
+/******************************************************************************/

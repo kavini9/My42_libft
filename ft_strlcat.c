@@ -6,7 +6,7 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 23:50:11 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/06 22:44:44 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/07 20:08:28 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 /*     If the src and dst strings overlap, the behavior is undefined.         */
 /*                                                                            */
 /*RETURN VALUES                                                               */
-/*     returns the total length of the string it tried to create which is the */
+/*     Returns the total length of the string it tried to create which is the */
 /*	   initial length of dst plus the length of src.                          */
 /*	   If the return value is >= dstsize, the output string has been          */
 /*	   trunacated. It is the caller's responsibility to handle this.          */
