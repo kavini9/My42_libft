@@ -6,13 +6,13 @@
 /*   By: wweerasi <wweerasi@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 17:34:10 by wweerasi          #+#    #+#             */
-/*   Updated: 2024/05/07 21:29:44 by wweerasi         ###   ########.fr       */
+/*   Updated: 2024/05/08 21:35:40 by wweerasi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_intlen(int n)
+static int	ft_intlen(int n)
 {
 	int	len_int;
 
@@ -35,7 +35,7 @@ int	ft_intlen(int n)
 	return (len_int + 1);
 }
 
-void	ft_putnbr(char *itoa, int nb)
+static void	ft_putnbr(char *itoa, int nb)
 {
 	if (nb >= 10)
 	{
